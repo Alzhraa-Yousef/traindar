@@ -1,0 +1,68 @@
+<app-headerafter></app-headerafter>
+<br><br>
+<div class="container px-5">
+    <div class="row gx-4">
+        <!-- the left div  -->
+        <div class="col-md-3 mb-5 leftdiv">
+            <div class="row" >
+                    <div class=" photo col-md-12 px-4 mt-4" >
+                        <img class="pimg"  src="../../assets/profilepic.png" ><!--*ngFor="let user of userlist"-->
+                        <p class="name " style="text-align: center;" >{{profileInfo.name}}</p>
+                        <p class=" email " style="text-align: center;">{{profileInfo.email}} </p>
+                    </div>
+
+                    <div class="col-md-12 edit_Profile " >
+                        <p><img width="20px" height="20px"
+                                src="../../assets/Icon awesome-user-circle.png">&nbsp;&nbsp;Edit Profile</p>
+                    </div>
+
+                    <div class=" point_History">
+                        <p><img width="20px" height="20px" src="../../assets/Icon awesome-coins.png">&nbsp;&nbsp;Point
+                            History</p>
+                    </div>
+
+                    <div class="invetation ">
+                        <p><img width="20px" height="20px"
+                                src="../../assets/Icon ionic-md-person-add.png">&nbsp;&nbsp;Invetation Link</p>
+                    </div>
+
+                    <div class=" credibility">
+                        <p><img width="20px" height="20px" src="../../assets/verified-user.png">&nbsp;&nbsp;Credibility
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+
+
+    <!-- the Right div contain the personal Information -->
+    <div class="col-md-7 ms-auto me-auto rightdiv">
+        <div class="row" >
+        <div class=" perinfo col-md-12 pt-3 mb-3 ml-2" style="font-size:30px;align-items: baseline;">
+            <span><img width="40px" height="45px" src="../../assets/Icon awesome-address-card.png">
+                Personal Information</span>
+        </div>
+
+        <div class=" info col-md-12 right">
+            <div class=" col-md-12 ms-auto me-auto ">
+                <p> <img width="30px" height="30px" src="../../assets/Icon awesome-user-circle.png">&nbsp;&nbsp;Name:
+                    {{profileInfo.name}}</p>
+                <hr style="height:3px; border-width:2; color:#79572E; background-color:#79572E">
+                <p> <img width="30px" height="30px" src="../../assets/Icon material-email.png">&nbsp;&nbsp;Email
+                    Contact: {{profileInfo.email}}</p>
+               
+                <hr style="height:3px; border-width:2; color:#79572E; background-color:#79572E">
+                <p> <img width="30px" height="30px" src="../../assets/Icon awesome-phone.png">&nbsp;&nbsp;Mobil Number:
+                    {{profileInfo.phone}}</p>
+                <hr style="height:3px; border-width:2; color:#79572E; background-color:#79572E">
+                <p> <img width="30px" height="30px" src="../../assets/Icon awesome-coins.png">&nbsp;&nbsp;Points Number:
+                    {{profileInfo.points}}</p>
+                <hr style="height:3px; border-width:0; color:#79572E; background-color:#79572E">
+            <br>
+            </div>
+        </div>
+    </div>
+</div>
+</div></div>
+<br><br><br><br>
+<app-footer></app-footer>

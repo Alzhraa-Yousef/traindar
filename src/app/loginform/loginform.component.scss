@@ -1,0 +1,39 @@
+
+
+
+
+#singin{background-image: url('../../assets/formbakground.png');height:750px;background-position: center;}
+.form , .final{background-color: #DFD1A2;opacity:0.8;width:400px;}
+.form img{width:80px;height:50px;}
+h2 {margin-left:95px;}
+h2 a {color: black;text-decoration: none;}
+h4{margin-left:110px;}
+.form-control{width:280px;}
+p a{color: black;}
+.btn1 {background-color: #F6BC00;border-radius:25px;margin-left:105px;}
+.btn2{background-color: #F6BC00;border-radius:25px;margin-left:110px;height:40px;width:80px;}
+
+a.disabled {cursor:pointer;}
+#singin{background-image: url('../../assets/formbakground.png');height:750px;background-position: center;}
+#singin input{margin-left:10px;}
+#singin p.forget2{margin-left:15px;}
+#singin p.dont2{margin-left: 15px;}
+
+#singin small{margin-left: 15px;}
+
+
+.pass{
+  background-image: url("../../assets/Icon\ awesome-lock.png");
+  background-size: 20px 20px;
+  background-position: 240px 8px;
+  background-repeat: no-repeat;
+}
+.email{
+  background-image: url("../../assets/Icon\ material-email.png");
+  background-size: 20px 20px;
+  background-position: 240px 8px;
+  background-repeat: no-repeat;
+}
+
+
+.pass:focus,.email:focus{background-image: none;}

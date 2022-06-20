@@ -1,0 +1,85 @@
+<!--Forget password enter code-->
+<section *ngIf="flagCodeSection"  id="forgetpass3" class=" d-flex justify-content-center align-items-center" >
+  <div class="px-md-1 form d-flex justify-content-center align-items-center">
+  <form >
+    <h2 class="d-inline">TrainDar</h2><h5>Resetting your password</h5><br>
+
+    <div class="form-outline mb-3">
+      <input type="email" class="form-control code" placeholder="Enter The Code" [class.is-invalid]="txtcode.invalid && txtcode.touched"  name="txtcode" #txtcode="ngModel" required  [(ngModel)]="userModel3.code" />
+      <small class="text-danger" [class.d-none]="!txtcode.errors?.['required']|| txtcode.untouched">
+        Code is required
+    </small>
+    <small class="text-danger" [class.d-none]="!txtcode.errors?.['pattern'] || txtcode.untouched">
+        Code must be number <!--([1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9])-->
+    </small>
+    </div>
+  <p *ngIf="flagForgitcodeIncomplete" class="text-center fs-6 fw-bold text-danger">please code is required <br></p>
+  <p>We will send you a code, please check your messages</p>
+  <p class="text-center fs-6 fw-bold text-danger"> {{errorMessageF3}}</p>
+      <div class=" d-flex justify-content-center">
+        <br>
+      <button (click)="checkForgitCode($event)"  type="submit" class="btn btn2" >Next</button><br><br><br>
+    </div><br><br>
+  </form>
+</div>
+
+</section>
+
+
+
+
+
+
+<!--Forget password enter new password -->
+<section *ngIf="flagPassSection" id="forgetpass2" class=" d-flex justify-content-center align-items-center" >
+  <div class="px-md-1 form d-flex justify-content-center align-items-center">
+  <form >
+    <h2 class="d-inline">TrainDar</h2><h5>Reset your password</h5><br>
+
+    <div class="form-outline mb-3">
+      <input type="password" class="form-control pass" placeholder="password" [class.is-invalid]="txtpass.invalid && txtpass.touched" name="textpass" #txtpass="ngModel"required  [(ngModel)]="userModel.password" />
+      <small class="text-danger" [class.d-none]="txtpass.valid || txtpass.untouched">
+        user password is required
+    </small>
+    </div>
+  <div class="form-outline mb-3">
+      <input type="password" class="form-control pass" placeholder="confirm password" [class.is-invalid]="txtpass2.invalid && txtpass2.touched" name="textconformpass" #txtpass2="ngModel"required [(ngModel)]="userModel3.confirmpass">
+      <small class="text-danger" [class.d-none]="txtpass2.valid || txtpass2.untouched">
+          confirm password is required
+      </small>
+  </div>
+    <p>Resetting your password will log out of all other devices</p>
+    <p class="text-center fs-6 fw-bold text-danger"> {{errorMessageF2}}</p>
+    <p *ngIf="flagForgitPassIncomplete" class="text-center fs-6 fw-bold text-danger">please complete your information <br></p>
+    <p *ngIf='dontmatch'class="text-capitalize font-weight-bold text-center fs-5 text-danger" >passwords do not match </p>
+      <div class=" d-flex justify-content-center">
+        <br>
+      <button  (click)="checkpassANDconfirm($event)"  type="submit" class="btn btn2" >Next</button><br><br><br>
+    </div><br><br>
+  </form>
+</div>
+
+</section>
+
+
+<!--Forget password enter success -->
+<!-- <section id="forgetpass4" class=" d-flex justify-content-center align-items-center" >
+  <div class="px-md-1 form d-flex justify-content-center align-items-center">
+  <section class="final" >
+   <a  class="disabled"> <img src="../../assets/Group 67.png" ></a>
+    <h2 class="d-inline">TrainDar</h2><h5>Resetting your password</h5><br>
+
+    
+    <p>You're all set. You've successfully changed your password</p>
+      <div class=" d-flex justify-content-center">
+        <br><br>
+      <button  class="btn btn2" >Next</button><br><br><br>
+    </div><br><br>
+  </section>
+</div>
+
+</section> -->
+
+
+
+

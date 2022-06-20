@@ -1,0 +1,64 @@
+<!--#userLoginForm="ngForm"-->
+
+<!--Regiser-->
+<section id="singup"  class=" d-flex justify-content-center align-items-center" >
+  <div class="px-md-2 form d-flex justify-content-center align-items-center">
+  <form class="mt-2">
+    <h2><a routerLink="/home">TrainDar</a></h2><h4>SignUp</h4>
+    <div class="form-outline mt-3 mb-3 ">
+      <input id="name" type="text" class="form-control name" placeholder="Name"  [class.is-invalid]="txtname.invalid && txtname.touched" pattern="[A-Za-z ]*" name="textname" required #txtname="ngModel"  [(ngModel)]="userModel.name"/>
+      <small class="text-danger" [class.d-none]="!txtname.errors?.['required'] || txtname.untouched">
+        Name is required
+    </small>
+    <small class="text-danger" [class.d-none]="!txtname.errors?.['pattern'] || txtname.untouched">
+        Name must contain only capital and smal characters
+    </small>
+    </div>
+
+    <div class="form-outline mb-3">
+      <input type="password" class="form-control pass" placeholder="password" maxlength="10" [class.is-invalid]="txtpass.invalid && txtpass.touched" name="textpass" #txtpass="ngModel"required  [(ngModel)]="userModel.password" />
+      <small class="text-danger" [class.d-none]="txtpass.valid || txtpass.untouched">
+        user password is required
+    </small>
+    </div>
+
+    <div class="form-outline mb-3">
+      <input type="email" class="form-control email" placeholder="Email" [class.is-invalid]="txtemail.invalid && txtemail.touched" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="textemail" #txtemail="ngModel" required  [(ngModel)]="userModel.email" />
+      <small class="text-danger" [class.d-none]="!txtemail.errors?.['required']|| txtemail.untouched">
+        Email is required
+    </small>
+    <small class="text-danger" [class.d-none]="!txtemail.errors?.['pattern'] || txtemail.untouched">
+        Email must contains @ and . in the format <br>&nbsp;(aaa@bb.com)
+    </small>
+    </div>
+
+    
+        <div class="form-outline mb-3">
+          <input type="tel" placeholder="Phone" class="form-control phone"  [class.is-invalid]="txtphone.invalid && txtphone.touched"  name="txtphone" #txtphone="ngModel" required [(ngModel)]="userModel.phone"/>
+          <small class="text-danger" [class.d-none]="txtphone.valid || txtphone.untouched">
+            phone is required
+        </small>
+        
+    </div>
+
+        <!-- <div class="form-outline mb-3">
+          <input type="date" class="form-control date" placeholder="Birthdate" name="txtdate" [(ngModel)]="userModel.date"/>
+        </div> -->
+        <p *ngIf="flagRegister" class="text-center fs-6 fw-bold text-danger">Please complete register information <br></p>
+        <p class="text-center fs-6 fw-bold text-danger"> {{errorMessageReg}}</p>
+        <p><a (click)="haveaccount()" class="disabled">Have an account?</a></p>
+      <p class="d-inline"><a class="disabled">Privacy&policy</a></p>
+      <button (click)="checkBeforeSine($event)" type="submit" class="btn btn1" >Signup</button><br><br><br>
+    </form>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+

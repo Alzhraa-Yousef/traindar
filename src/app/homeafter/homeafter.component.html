@@ -1,0 +1,70 @@
+<app-headerafter></app-headerafter>
+<br><br>
+<div class="containerr">
+  <img class="img" src="../../assets/train1.jpg" alt="Snow" style="width:100%;" height="100%">
+  <div class="bottom-left">Save your time <br>with Traindar app</div>
+</div>
+
+<!-- <img class="img1 d-block w-100" src="../../assets/train1.jpg" alt="First slide"> --><br><br><br>
+<div class="about"  id="aboutafter">
+    <br><br>
+    <h1 class="h">About us</h1>
+    <p class="aboutp">Using the location of any person in a specific train,
+      Our app will track that train then provides its known 
+      location. we offer other services like knowing the next to
+      station and when would a train arrive at a specific one.</p>
+    <br><br>
+</div>
+<br><br>
+<div class="services"  id="serviceafter">
+  <br><br>
+    <h1 class="h"> Services</h1>
+    <br>
+    <div class="container ">
+        <div class="row row1 row-cols-3 gx-3 ">
+
+          <div class=" col ss">
+           <a routerLink="/homeafter" (click)="Sweetalert()"> <div class="s p-5 border "><img class="mb-3" src="../../assets/Icon material-location-on.png"><br>Share location</div></a>
+          </div>
+
+          <!-- <div *ngIf="!service1Flag" class=" col ss2">
+              <div class="s p-3 border ">
+                <h3>TrainDar</h3>
+                <h4 >Share location</h4>
+                <select class="form-select mt-4" name="trainIDMenu"  id="trainIDMenu" aria-label="Default select example">
+                  <option selected disabled> Select train ID</option>
+                  <option> 11000</option>
+                  <option> 21000</option>
+                </select>
+                <button class="btn btn2 mt-4 mb-2"(click)="getUserLocation()" >Next</button>
+                <p *ngIf="selectFlag" style="color: red;font-size:18px;">Please select TrainID</p>
+              </div>
+           </div> -->
+           
+
+
+
+           
+          <div class=" col ss">
+            <a href="/TrainID" target="_blank"> <div class="s p-5 border "><img class="mb-3" src="../../assets/city (2).png"><br>Search by 
+              train ID</div></a>
+          </div>
+          <div class=" col ss">
+            <a href="/CityTrainID" target="_blank"> <div class="s p-5 border "><img class="mb-3" src="../../assets/Icon awesome-train.png"><br>Check
+              upcoming trains  </div></a>
+          </div>
+        </div>
+      </div>
+        <div class="row  row2 row-cols-3 gx-3 ">
+          <div class=" col ss1">
+           <a href="/CityTrainName" target="_blank"> <div class="s p-5 border "><img class="mb-3" src="../../assets/city (1).png"><br>Check out 
+            next stations</div></a>
+          </div>
+          <div class=" col ss2">
+            <a href="/points"> <div class="s p-5 border "><img class="mb-3" src="../../assets/Icon awesome-coins.png"><br>Manage points</div></a>
+          </div>
+        </div>
+      
+      <br><br><br><br><br><br><br>
+</div><div id="dialog-message" title="Download complete"></div>
+<app-footerafter></app-footerafter>

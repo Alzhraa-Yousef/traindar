@@ -1,0 +1,28 @@
+.container{margin-top: 150px;}
+div.leftdiv{background-color: #DFD1A2; }
+div.perinfo{height: 100px;}
+
+
+div.perinfo{background-color: #DFD1A2;}
+div.info{ box-shadow:2px 2px #e2ded1;}
+.photo{background-color: #DFD1A2;}
+
+.pimg{width: 130px;  display: block;margin-left: auto;margin-right: auto;width: 50%;}
+.name{font-size:30px;}
+.email{font-size: 20px;}
+ 
+.edit_Profile, .point_History ,.invetation ,.credibility{width:100%;padding-left: 10px;font-size:15px; background-color: #E5DECA;cursor: pointer;border:1px solid #bdb7a6;}
+.edit_Profile:hover {
+    background-color: #d6d0bd;
+  }
+.point_History:hover {
+    background-color: #d6d0bd;
+  } 
+  .invetation:hover{
+    background-color: #d6d0bd;
+   }
+.credibility:hover {
+    background-color: #d6d0bd;
+  }
+
+

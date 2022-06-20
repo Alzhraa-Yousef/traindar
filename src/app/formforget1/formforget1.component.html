@@ -1,0 +1,27 @@
+<!--Forget password enter email-->
+<section id="forgetpass1" class=" d-flex justify-content-center align-items-center" >
+    <div class="px-md-1 form d-flex justify-content-center align-items-center">
+    <form >
+     <a (click)="returnLogin()" class="disabled"> <img src="../../assets/Group 67.png" ></a>
+      <h2 class="d-inline">TrainDar</h2><h5>Reset your password</h5><br>
+  
+      <div class="form-outline mb-3">
+        <input type="email" class="form-control email" placeholder="Enter your email" [class.is-invalid]="txtemail.invalid && txtemail.touched" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="textemail" #txtemail="ngModel" required  [(ngModel)]="userModel3.email" />
+        <small class="text-danger" [class.d-none]="!txtemail.errors?.['required']|| txtemail.untouched">
+          Email is required
+      </small>
+      <small class="text-danger" [class.d-none]="!txtemail.errors?.['pattern'] || txtemail.untouched">
+          Email must contains @ and . in the format<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aaa@bb.com)
+      </small>
+      </div>
+      <p *ngIf="flagForgitEmailIncomplete" class="text-center fs-6 fw-bold text-danger">please email is required <br></p>
+      <p class="text-center fs-6 fw-bold text-danger"> {{errorMessageF1}}</p> 
+      <p>We will send you a code, please check your messages</p>
+        <div class=" d-flex justify-content-center">
+          <br>
+        <button (click)="checkForgitEmail($event)" type="submit" class="btn btn2" >Next</button><br><br><br>
+      </div><br><br>
+    </form>
+  </div>
+  
+  </section>

@@ -1,0 +1,34 @@
+<!--Login-->
+<section id="singin" class=" d-flex justify-content-center align-items-center" >
+    <div class="px-md-2 form d-flex justify-content-center align-items-center">
+    <form class="mt-2">
+      <h2><a routerLink="/home">TrainDar</a></h2><h4>SignIn</h4>
+  
+      <div class="form-outline mt-3 mb-3">
+        <input type="email" class="form-control email" placeholder="Email" [class.is-invalid]="txtemail.invalid && txtemail.touched" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="textemail" #txtemail="ngModel" required  [(ngModel)]="userModel2.email" />
+        <small class="text-danger" [class.d-none]="!txtemail.errors?.['required']|| txtemail.untouched">
+          Email is required
+      </small>
+      <small class="text-danger" [class.d-none]="!txtemail.errors?.['pattern'] || txtemail.untouched">
+          Email must contains @ and . in the format <br>&nbsp;&nbsp;&nbsp;&nbsp;(aaa@bb.com)
+      </small>
+      </div>
+  
+      <div class="form-outline mb-3">
+        <input type="password" class="form-control pass" placeholder="password" maxlength="10" [class.is-invalid]="txtpass.invalid && txtpass.touched" name="textpass" #txtpass="ngModel"required  [(ngModel)]="userModel2.password" />
+        <small class="text-danger" [class.d-none]="txtpass.valid || txtpass.untouched">
+          user password is required
+      </small>
+      </div>
+  
+      <p *ngIf="flagLogin" class="text-center fs-6 fw-bold text-danger">Please complete login information <br></p>
+      <p class="text-center fs-6 fw-bold text-danger"> {{errorMessageLog}}</p>
+    
+      <p class=" forget2"><a class="disabled" (click)="forgitpass()" >Forgot Password ?</a></p>
+        <p class="me-4 d-inline dont2"><a (click)="registerform()"class="disabled" >Don't have an account?</a></p>
+        <br><br>
+        <button (click)="checkBeforeLogin($event)" type="submit" class="btn btn2" >Signin</button><br><br><br>
+      <br>
+    </form>
+  </div>
+  </section>

@@ -1,0 +1,42 @@
+<app-header></app-header>
+<section id="singup" class=" d-flex justify-content-center align-items-center" >
+  <div class="px-md-2 form d-flex justify-content-center align-items-center">
+  <form >
+    <h2>TrainDar</h2><h4>Contact</h4>
+    <div class="form-outline mt-3 mb-3 ">
+      <input id="name" type="text" class="form-control name" placeholder="Name"  [class.is-invalid]="txtname.invalid && txtname.touched" pattern="[A-Za-z ]*" name="textname" required #txtname="ngModel"  [(ngModel)]="userModel.name"/>
+      <small class="text-danger" [class.d-none]="!txtname.errors?.['required'] || txtname.untouched">
+        Name is required
+    </small>
+    <small class="text-danger" [class.d-none]="!txtname.errors?.['pattern'] || txtname.untouched">
+        Name must contain only capital and smal characters
+    </small>
+    </div>
+    <div class="form-outline mb-3">
+      <input type="email" class="form-control email " placeholder="Email" [class.is-invalid]="txtemail.invalid && txtemail.touched" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="textemail" #txtemail="ngModel" required  [(ngModel)]="userModel.email" />
+      <small class="text-danger" [class.d-none]="!txtemail.errors?.['required']|| txtemail.untouched">
+        Email is required
+    </small>
+    <small class="text-danger" [class.d-none]="!txtemail.errors?.['pattern'] || txtemail.untouched">
+        Email must contains @ and . in the format (aaa@bb.com)
+    </small>
+    </div>
+
+    <div class="form-outline mb-3">
+      <textarea class="form-control message " placeholder="Message" [class.is-invalid]="txtmessage.invalid && txtmessage.touched" name="txtmessage" #txtmessage="ngModel" required  [(ngModel)]="userModel3.message">
+    </textarea>
+      <small class="text-danger" [class.d-none]="!txtmessage.errors?.['required']|| txtmessage.untouched">
+        Message is required
+    </small>
+    </div>
+    <p *ngIf="flagsend" class="text-center fs-6 fw-bold text-danger">Please complete your information <br></p>
+
+    <button (click)="checkBeforeSend($event)" type="submit" class="btn mt-4" > <a href="/contact" (click)="checkBeforeSend($event)">Send</a></button>
+    <br><br><br>
+  </form>
+</div>
+
+</section>
+
+  <app-footer></app-footer>
+

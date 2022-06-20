@@ -1,0 +1,35 @@
+.form {background-color: #DFD1A2;opacity:0.8;width:400px;}
+.form img{width:80px;height:50px;}
+h2 {margin-left:85px;}
+h4{margin-left:100px;}
+.form-control{width:270px;}
+p a{color: black;}
+.btn2{background-color: #F6BC00;border-radius:25px;margin-left:100px;}
+.forget2,.btn2{align-self: center;}
+
+a.disabled {cursor:pointer;}
+#forgetpass1{background-image: url('../../assets/formbakground.png');height:750px;background-position: center;}
+
+
+#forgetpass1 h2 {margin-left:50px;text-align: end;}
+#forgetpass1 input {margin-left:25px;}
+#forgetpass1 p {font-size: 11.5px;margin-left:20px;}
+#forgetpass1 h5 {margin-left:67px;}
+#forgetpass1 .btn2 {margin-left:20px;}
+#forgetpass1 form img{margin-left:20px;width:30px;height:25px;}
+
+
+
+
+#forgetpass1 small{margin-left:28.5px;}
+
+
+.email{
+  background-image: url("../../assets/Icon\ material-email.png");
+  background-size: 20px 20px;
+  background-position: 240px 8px;
+  background-repeat: no-repeat;
+}
+
+
+.email:focus{background-image: none;}
