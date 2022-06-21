@@ -10,9 +10,9 @@ export class TrainService {
   constructor(private _http:HttpClient) { }
 
   // Search service
-  _urlTrianID="https://train-dar.azurewebsites.net/api/v1/train/view-all";
+  _urlTrianID="https://train-dar.azurewebsites.net/api/v1/train/view-all-active";
   _urlTrianLocation="https://train-dar.azurewebsites.net/api/v1/train/view?user-id=";
-
+ 
   
   GetTrainIDList(){
     return this._http.get(this._urlTrianID)
@@ -43,8 +43,8 @@ export class TrainService {
     .pipe(catchError(err=>{return throwError(err.error.message)}));
   }
   
-  GetTrianLocation2(trainID:any){
-    return this._http.get(this._urlTrianLocation+trainID)
+  GetTrianLocation2(trainID:any,UserID:any){
+    return this._http.get(this._urlTrianLocation+UserID+"&train-id="+trainID)
     .pipe(catchError(err=>{return throwError(err.error.message)}));    
   }
 
@@ -54,8 +54,14 @@ export class TrainService {
   // nearst stations service
 // بستخدم من اول خدمة حجات مشتركة
 
-
+_urlTrianID2="https://train-dar.azurewebsites.net/api/v1/train/view-all-active";
 _urlTrainIDSelected="https://train-dar.azurewebsites.net/api/v1/station/nearest-stations?user-id=";
+
+GetTrainIDList2(){
+  return this._http.get(this._urlTrianID2)
+  .pipe(catchError(err=>{return throwError(err.error.message)}));    
+}
+
 
 GetCityNameTimeList(trainID:any,UserID:any){
   return this._http.get(this._urlTrainIDSelected +UserID + "&train-id="+ trainID)

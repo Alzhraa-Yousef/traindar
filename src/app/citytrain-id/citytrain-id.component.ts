@@ -355,7 +355,7 @@ export class CitytrainIDComponent implements OnInit {
       element.textContent='Selected Train '+id+' Location'
       element.addEventListener('click',()=>{
         
-        this.trainInformation.GetTrianLocation2(id).subscribe(
+        this.trainInformation.GetTrianLocation2(id,this.session).subscribe(
           (response) => {this.trainLocation=response},
           (error) =>{console.log(error);
             //this.errorMessageID = error;

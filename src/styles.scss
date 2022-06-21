@@ -3,7 +3,31 @@
 // Custom.scss
 
 body{background-color: #F6F1E2;}
-$breakpoint-tablet:400px;
-$breakpoint-tablet2:1500px;
-@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
-{ body{width: 115%;}}
+
+@media ( max-width: 320px) 
+ { body{width: 115%;}
+}
+
+@media ( max-width: 768px) 
+ { body{width: 115%;}
+}
+
+@media ( max-width:1200px) 
+ { body{width: 115%;}
+}
+
+
+// $breakpoint-tablet:400px;
+// $breakpoint-tablet2:1500px;
+// @media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
+//  { body{width: 115%;}
+// }
+
+
+// $breakpoint-tablet2:320px;
+// $breakpoint-tablet3:768px;
+// @media  ( max-width: $breakpoint-tablet3) 
+//  { body{width: 115%;}
+// [class*="col-"] {width: 100%;}
+
+// }

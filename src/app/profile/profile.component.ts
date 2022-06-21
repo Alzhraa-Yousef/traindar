@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SharingServiceService } from '../servises/sharing-service.service';
 import { UserServiseService } from '../servises/user-servise.service';
 import { Userregister } from '../shared/userform';
 
@@ -13,7 +12,7 @@ import { Userregister } from '../shared/userform';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(private serviceuser:UserServiseService,private router: Router,private sharingService: SharingServiceService) { }
+  constructor(private serviceuser:UserServiseService,private router: Router) { }
 
   profileInfo:Userregister | any;
   errorMessage:string| any;
@@ -28,7 +27,7 @@ export class ProfileComponent implements OnInit {
           this.UserID=localStorage.getItem('UserID');
           console.log(this.UserID);
           this.serviceuser.GetUsrInformation(this.UserID).subscribe(
-          userdata=>{ this.profileInfo=userdata; },
+          userdata=>{ this.profileInfo=userdata;  localStorage.setItem("Username" ,this.profileInfo)  },
           errorMsg=>{this.errorMessage=errorMsg;console.log(this.errorMessage);}
         );
     }

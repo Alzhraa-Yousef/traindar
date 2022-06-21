@@ -56,7 +56,7 @@ export class FormsComponent implements OnInit {
     }
     else{ this.flagRegister=false;
           this.serviceuser.PostUsrInformation(this.userModel).subscribe(
-          (response) => {console.log(response)},
+          (response) => {console.log(response);localStorage.setItem('UserName', this.userModel.name);},
           (error) =>{ 
                   this.errorMessageReg = error;
                   console.log(error);

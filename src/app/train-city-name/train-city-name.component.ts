@@ -31,7 +31,7 @@ export class TrainCityNameComponent implements OnInit {
   
         else{
                 //httpget to get Trainidlist for selectoptions
-          this.trainInformation.GetTrainIDList().subscribe(
+          this.trainInformation.GetTrainIDList2().subscribe(
             (response) => {this.trainIDList=response},
             (error) =>{console.log(error);
                      this.errorMessageID = error;
@@ -90,14 +90,11 @@ export class TrainCityNameComponent implements OnInit {
                       if (this.StationNameTimeList.length<1){
                         Swal.fire({
                           title: 'Error',
-                          html: "There is no available Trains for selected cities",
+                          html: "There is no available stations",
                           iconHtml: '<img src="../../assets/error.png">',
                           //background:'#DFD1A2',
-                          showCancelButton: true,
                           confirmButtonColor: '#F6BC00',
-                          cancelButtonColor: '#F6BC00',
-                          cancelButtonText:'No',
-                          confirmButtonText: 'Yes',
+                          confirmButtonText: 'OK',
                           width:400, });
               
                       }
