@@ -3,3 +3,7 @@
 // Custom.scss
 
 body{background-color: #F6F1E2;}
+$breakpoint-tablet:400px;
+$breakpoint-tablet2:1500px;
+@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
+{ body{width: 115%;}}

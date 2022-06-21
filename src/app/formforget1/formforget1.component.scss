@@ -33,3 +33,11 @@ a.disabled {cursor:pointer;}
 
 
 .email:focus{background-image: none;}
+
+$breakpoint-tablet:400px;
+$breakpoint-tablet2:1500px;
+@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
+{
+  #forgetpass1{height:1200px;}
+
+}

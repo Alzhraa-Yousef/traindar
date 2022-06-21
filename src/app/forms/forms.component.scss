@@ -54,5 +54,11 @@ a.disabled {cursor:pointer;}
 
 .name:focus,.pass:focus,.email:focus,.phone:focus,.date:focus,.code:focus{background-image: none;}
 
- 
+$breakpoint-tablet:400px;
+$breakpoint-tablet2:1500px;
+@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
+{
+  #singup{height:1200px;}
+
+}
   

@@ -37,3 +37,11 @@ a.disabled {cursor:pointer;}
 
 
 .pass:focus,.email:focus{background-image: none;}
+
+$breakpoint-tablet:400px;
+$breakpoint-tablet2:1500px;
+@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
+{
+  #singin{height:1200px;}
+
+}

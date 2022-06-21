@@ -1,31 +1,30 @@
-
+#home{font-family:Arial, Helvetica, sans-serif}
 .containerr {
-  position: relative;
-  text-align: center;
-  color: white;
-  height:350px;
-  background-color: Black;
-}
-.img{
-  opacity:0.5;
-}
-
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom:40px;
-  left:100px;
-  font-size:45px;
-}
+    position: relative;
+    text-align: center;
+    color: white;
+    height:370px;
+    background-color: Black;
+  }
+  .img{
+    opacity:0.5;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom:40px;
+    left:100px;
+    font-size:45px;
+  }
 // .img1{height:350px;}
 .about{background-color:#DFD1A2 ;}
 .h{margin:30px;}
-.aboutp{margin-left:50px;font-size:30px;}
+.aboutp{margin-left:50px;font-size:25px;}
 a{color: black;text-decoration: none;}
 
 .row1 .ss{width:300px;height: 300px;margin-right:30px;margin-left:30px;}
 .row1{margin-left:120px; }//margin-left:10% ;margin-right:5%
-
 
 
 
@@ -46,7 +45,28 @@ footer{background-color:#DFD1A2 ;}
 .ss2 a .s:hover{background-color:#bbac7c ;}
 
 
+$breakpoint-tablet:400px;
+$breakpoint-tablet2:1500px;
+@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) {
+  .row1{
+    //margin-left:70px; 
+    // margin: auto;
+    // width: 60%;
+    // padding: 10px;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 70%;
+  }
+  .row2{
+    //margin-left:75px;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 70%;
+  }
+  .aboutp{margin-right:15%;}
 
+  
+}
 
 
 
@@ -57,26 +77,3 @@ footer{background-color:#DFD1A2 ;}
 .btn2{background-color: #eec749;border-radius:25px;width:130px;margin-top: 10px;}
 #dialog-message{width: 1000px;}
 
-
-$breakpoint-tablet:400px;
-$breakpoint-tablet2:1500px;
-@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) {
-  .row1{
-    //margin-left:70px; 
-    // margin: auto;
-    // width: 60%;
-    // padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  .containerr , .about{width: 100%;}
-  .aboutp{text-align:justify;margin-right:30px;}
-  .row2{
-    //margin-left:75px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  
-}
