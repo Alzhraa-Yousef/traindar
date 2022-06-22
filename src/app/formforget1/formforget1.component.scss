@@ -34,10 +34,21 @@ a.disabled {cursor:pointer;}
 
 .email:focus{background-image: none;}
 
-$breakpoint-tablet:400px;
-$breakpoint-tablet2:1500px;
-@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
-{
-  #forgetpass1{height:1200px;}
 
+@media ( min-width: 768px)and  ( max-width:1300px) 
+ { 
+  #forgetpass1{height:1200px; background-repeat:no-repeat;}
+}
+
+// my phone
+@media ( min-width: 400px)and  ( max-width: 768px) 
+ {
+  #forgetpass1{height:1070px;background-repeat: no-repeat;}
+ }
+
+
+// small pfone
+@media ( max-width:400px) 
+ { 
+  #forgetpass1{height:1300px;background-repeat: no-repeat;}
 }

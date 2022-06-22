@@ -54,11 +54,22 @@ a.disabled {cursor:pointer;}
 
 .name:focus,.pass:focus,.email:focus,.phone:focus,.date:focus,.code:focus{background-image: none;}
 
-$breakpoint-tablet:400px;
-$breakpoint-tablet2:1500px;
-@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) 
-{
-  #singup{height:1200px;}
-
-}
   
+
+@media ( min-width: 768px)and  ( max-width:1300px) 
+ { 
+  #singup{height:1200px; background-repeat:no-repeat;}
+}
+
+// my phone
+@media ( min-width: 400px)and  ( max-width: 768px) 
+ {
+  #singup{height:1070px;background-repeat: no-repeat;}
+ }
+
+
+// small pfone
+@media ( max-width:400px) 
+ { 
+  #singup{height:1300px;background-repeat: no-repeat;}
+}
