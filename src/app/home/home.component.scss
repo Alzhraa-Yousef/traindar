@@ -44,10 +44,28 @@ footer{background-color:#DFD1A2 ;}
 .ss1 a .s:hover{background-color:#bbac7c ;}
 .ss2 a .s:hover{background-color:#bbac7c ;}
 
+// for small labtop
+@media ( min-width: 768px)and ( max-width:1300px) {
+  .row1 .ss{width:500px;height: 500px;}
+  .row2 .ss1{width:500px;height: 500px;}
+  .row2 .ss2{width:500px;height: 500px;}
+.rooow{margin-right:2300px;margin-top: 500px;}
+  .row1{
+    margin-left: auto;
+    margin-right:auto;
+    width: 175%;
+  }
+  .row2{
+    margin-left:1980px;
+    margin-right: auto;
+    width: 175%;
+    margin-bottom: 300px;
+  }
+  .aboutp{font-size:40px;}
+}
 
-$breakpoint-tablet:400px;
-$breakpoint-tablet2:1500px;
-@media (min-width: $breakpoint-tablet )and ( max-width: $breakpoint-tablet2) {
+// my phone
+@media ( max-width: 768px) {
   .row1{
     //margin-left:70px; 
     // margin: auto;
@@ -55,15 +73,39 @@ $breakpoint-tablet2:1500px;
     // padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 75%;
   }
   .row2{
     //margin-left:75px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 75%;
+  }
+  .aboutp{margin-right:15%;font-size:20px;}
+  .bottom-left {
+    position: absolute;
+    bottom:30px;
+    left:40px;
+    font-size:25px;
+  }
+}
+
+
+// small phone
+@media ( max-width:400px) {
+  .row1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .row2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   .aboutp{margin-right:15%;}
-
-  
 }
+
+
+
+

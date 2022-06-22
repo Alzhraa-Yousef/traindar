@@ -21,7 +21,9 @@ agm-map,#map{
     width: 85%;//600px;
   }
 
-
+  @media ( min-width: 768px)and  ( max-width:1300px) 
+  { #brr{margin-bottom:900px;}
+ }
 
 
 

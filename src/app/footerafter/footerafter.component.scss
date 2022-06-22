@@ -4,4 +4,8 @@ footer{background-color:#DFD1A2 ;}
 a{text-decoration: none;color: black;}
 .f1{height: 35px;width:215px;}
 .f2{height:35px;  width:100px;}
-a.disabled {cursor:pointer;font-size: 13px;}
+a.disabled1 {cursor:pointer;font-size: 13px;}
+
+// @media ( min-width: 768px)and  ( max-width:1300px) 
+//  { .footafter{margin-left: 20%;}
+// }

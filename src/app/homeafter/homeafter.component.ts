@@ -39,9 +39,7 @@ export class HomeafterComponent implements OnInit {
       '<a href="https://www.google.com/">App</a> ' ,
       iconHtml: '<img src="../../assets/icons8-download-48.png" >',
       //background:'#DFD1A2',
-      showCancelButton: true,
       confirmButtonColor: '#F6BC00',
-      cancelButtonColor: '#F6BC00',
       confirmButtonText: 'OK'
           // }).then((result) => {
           //   if (result.isConfirmed) {

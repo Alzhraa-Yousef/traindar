@@ -43,3 +43,7 @@
     height: 400px;
     width: 600px;
   }
+
+  @media ( min-width: 768px)and  ( max-width:1300px) 
+{ #brr{margin-bottom: 2000px;}
+}
