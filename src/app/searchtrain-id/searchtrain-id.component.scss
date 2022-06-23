@@ -22,9 +22,11 @@ agm-map,#map{
   }
 
   @media ( min-width: 768px)and  ( max-width:1300px) 
-  { #brr{margin-bottom:900px;}
+  { #brr{margin-bottom:2300px;}
  }
 
-
+ @media ( min-width: 768px)and ( max-width:1050px){
+  #brr{margin-bottom:1050px;}
+ }
 
 

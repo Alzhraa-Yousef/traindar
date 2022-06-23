@@ -7,7 +7,7 @@
 }
 .navbar-nav pre{background-color:#DFD1A2 ;}
 //
-.navbar-nav li{font-size:18px;}
+.navbar-nav li{font-size:15px;}
 .navbar-nav li:hover{background-color: #bbac7c;}
 .dropdown-menu{width: 350px;height: 350px;overflow-y: scroll;overflow-x: hidden;}
 ::-webkit-scrollbar {
@@ -20,12 +20,17 @@
 }
 
 
+
 @media ( min-width: 768px)and ( max-width:1300px) {
-.smalllap{margin-left: 2800px;}
-.navbar-nav li{font-size:45px;margin-inline: 50px;}
-}
+    .smalllap{margin-left: 2600px;}
+    .navbar-nav li{font-size:35px;margin-inline:35px;}
+    }
+    
 
-
+@media ( min-width: 768px)and ( max-width:1050px) {
+    .smalllap{margin-left: 1940px;}
+    .navbar-nav li{font-size:35px;margin-inline:35px;}
+    }
 
 
 

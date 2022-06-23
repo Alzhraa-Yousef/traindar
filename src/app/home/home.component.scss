@@ -45,7 +45,7 @@ footer{background-color:#DFD1A2 ;}
 .ss2 a .s:hover{background-color:#bbac7c ;}
 
 // for small labtop
-@media ( min-width: 768px)and ( max-width:1300px) {
+@media ( min-width: 768px)and  ( max-width:1300px){
   .row1 .ss{width:500px;height: 500px;}
   .row2 .ss1{width:500px;height: 500px;}
   .row2 .ss2{width:500px;height: 500px;}
@@ -64,8 +64,28 @@ footer{background-color:#DFD1A2 ;}
   .aboutp{font-size:40px;}
 }
 
+@media ( min-width: 768px)and ( max-width:1050px) {
+  .row1 .ss{width:500px;height: 500px;}
+  .row2 .ss1{width:500px;height: 500px;}
+  .row2 .ss2{width:500px;height: 500px;}
+.rooow{margin-right:2000px;margin-top: 500px;}
+  .row1{
+    margin-left: auto;
+    margin-right:auto;
+    width: 200%;
+  }
+  .row2{
+    margin-left:1450px;
+    margin-right: auto;
+    width: 175%;
+    margin-bottom: 350px;
+  }
+  .aboutp{font-size:40px;}
+}
+
+
 // my phone
-@media ( max-width: 768px) {
+@media ( min-width: 400px)and  ( max-width: 768px) {
   .row1{
     //margin-left:70px; 
     // margin: auto;
@@ -79,7 +99,7 @@ footer{background-color:#DFD1A2 ;}
     //margin-left:75px;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 70%;
   }
   .aboutp{margin-right:15%;font-size:20px;}
   .bottom-left {
@@ -101,7 +121,7 @@ footer{background-color:#DFD1A2 ;}
   .row2{
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 48%;
   }
   .aboutp{margin-right:15%;}
 }
