@@ -47,7 +47,7 @@
       <h2><a routerLink="/home">TrainDar</a></h2>
       <h4>Buy points</h4><br>
   
-      <input id="name" type="text" class="form-control" placeholder="Enter Points number"  [class.is-invalid]="txtpoint.invalid && txtpoint.touched"  name="txtpoint" required #txtpoint="ngModel"  [(ngModel)]="pointnumber"/>
+      <input id="name" type="text" class="form-control" placeholder="Enter Points number"  [class.is-invalid]="txtpoint.invalid && txtpoint.touched"  name="txtpoint" required #txtpoint="ngModel"  [(ngModel)]="pointModel.pointnumber"/>
       <small class="text-danger" [class.d-none]="!txtpoint.errors?.['required'] || txtpoint.untouched">
         Points number is required
     </small>
@@ -55,7 +55,7 @@
         Points must be number
     </small>
   <br>
-      <input id="name" type="text" class="form-control" placeholder="Enter Card number"  [class.is-invalid]="txtcard.invalid && txtcard.touched"  name="txtcard" required #txtcard="ngModel"  [(ngModel)]="cardnumber"/>
+      <input id="name" type="text" class="form-control" placeholder="Enter Card number"  [class.is-invalid]="txtcard.invalid && txtcard.touched"  name="txtcard" required #txtcard="ngModel"  [(ngModel)]="pointModel.cardnumber"/>
         <small class="text-danger" [class.d-none]="!txtcard.errors?.['required'] || txtcard.untouched">
           Card is required
       </small>
@@ -63,7 +63,7 @@
         Card must be number
       </small>
   <br>
-  <input id="name" type="text" class="form-control" placeholder="Enter Expary date"  [class.is-invalid]="txtdate.invalid && txtdate.touched"  name="txtdate" required #txtdate="ngModel"  [(ngModel)]="expirydate"/>
+  <input id="name" type="text" class="form-control" placeholder="Enter Expary date"  [class.is-invalid]="txtdate.invalid && txtdate.touched"  name="txtdate" required #txtdate="ngModel"  [(ngModel)]="pointModel.expirydate"/>
         <small class="text-danger" [class.d-none]="!txtdate.errors?.['required'] || txtdate.untouched">
           Expary date is required
       </small>
@@ -71,7 +71,7 @@
         Expary date must contain only capital and smal characters
       </small>
   <br>
-  <input id="name" type="text" class="form-control" placeholder="Enter Security Code"  [class.is-invalid]="txtcode.invalid && txtcode.touched"  name="txtcode" required #txtcode="ngModel"  [(ngModel)]="securitycode"/>
+  <input id="name" type="text" class="form-control" placeholder="Enter Security Code"  [class.is-invalid]="txtcode.invalid && txtcode.touched"  name="txtcode" required #txtcode="ngModel"  [(ngModel)]="pointModel.securitycode"/>
         <small class="text-danger" [class.d-none]="!txtcode.errors?.['required'] || txtcode.untouched">
           Security Code is required
       </small>

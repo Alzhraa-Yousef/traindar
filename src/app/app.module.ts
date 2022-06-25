@@ -25,6 +25,7 @@ import * as $ from 'jquery';
 import { CitytrainIDComponent } from './citytrain-id/citytrain-id.component';
 import { TrainCityNameComponent } from './train-city-name/train-city-name.component';
 import { ManagePointsComponent } from './manage-points/manage-points.component';
+import { PointshistoryComponent } from './pointshistory/pointshistory.component';
 
 //import { AgmCoreModule } from '@agm/core/lib/core.module';
 
@@ -52,6 +53,7 @@ import { ManagePointsComponent } from './manage-points/manage-points.component';
     CitytrainIDComponent,
     TrainCityNameComponent,
     ManagePointsComponent,
+    PointshistoryComponent,
   ],
   imports: [
     BrowserModule,

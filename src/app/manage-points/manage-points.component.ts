@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
+import { Points } from '../shared/userform';
 @Component({
   selector: 'app-manage-points',
   templateUrl: './manage-points.component.html',
@@ -12,10 +13,8 @@ export class ManagePointsComponent implements OnInit {
   buyFlag:boolean|undefined
   messageFlag:boolean|undefined
   name:string=''
+  pointModel: Points = new Points('', '','', '');
   pointnumber:any|undefined=''
-  cardnumber:any|undefined=''
-  expirydate:any|undefined=''
-  securitycode:any|undefined=''
   hasTopicError: boolean | undefined;
 
 
@@ -75,7 +74,7 @@ export class ManagePointsComponent implements OnInit {
   }
 
   buyPoints2(){
-    if(this.pointnumber==''||this.cardnumber==''||this.expirydate==''||this.securitycode==''|| this.hasTopicError==false) {
+    if(this.pointModel.pointnumber==''||this.pointModel.cardnumber==''||this.pointModel.expirydate==''||this.pointModel.securitycode==''|| this.hasTopicError==false) {
       this.messageFlag=true;
     }
     else{

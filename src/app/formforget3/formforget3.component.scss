@@ -78,6 +78,8 @@ a.disabled {cursor:pointer;}
 @media ( min-width: 400px)and  ( max-width: 768px) 
  {
   #forgetpass2,#forgetpass3{height:1070px;background-repeat: no-repeat;}
+  h2{margin-left: 90px;}
+  h4{margin-left: 102px;}
  }
 
 
@@ -85,4 +87,6 @@ a.disabled {cursor:pointer;}
 @media ( max-width:400px) 
  { 
   #forgetpass2,.forgetpass3{height:1300px;background-repeat: no-repeat;}
+  h2{margin-left: 90px;}
+  h4{margin-left: 100px;}
 }

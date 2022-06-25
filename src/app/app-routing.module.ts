@@ -11,6 +11,7 @@ import { HomeafterComponent } from './homeafter/homeafter.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { ManagePointsComponent } from './manage-points/manage-points.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { PointshistoryComponent } from './pointshistory/pointshistory.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchtrainIDComponent } from './searchtrain-id/searchtrain-id.component';
 import { SharingServiceService } from './servises/sharing-service.service';
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path:'CityTrainID',component:CitytrainIDComponent},
   {path:'CityTrainName',component:TrainCityNameComponent},
   {path:'points',component:ManagePointsComponent},
+  {path:'pointshistory',component:PointshistoryComponent},
   {path:'**',component:NotfoundComponent}
 ];
 

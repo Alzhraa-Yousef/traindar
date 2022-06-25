@@ -1,0 +1,18 @@
+.container{margin-top: 150px;}
+// div.leftdiv{background-color: #DFD1A2;height: 100px; }
+.photo{background-color: #DFD1A2;height: 200px;padding-top:15px;}
+.pimg{width: 50px;margin-left:0px;margin-right:10px;position: absolute;}
+.photo span{font-size:30px;position: relative;left:60px;top:10px;}
+.name{font-size:20px;}
+.email{font-size: 20px;}
+ 
+
+
+
+  @media ( min-width:400px)and ( max-width:768px) {
+    .pimg{margin-left:50px}
+    .photo span{left:110px;top:10px;}
+    .leftdiv{margin-left:5px;}
+    #row3{width:30px;margin-left:-35px;}
+  }
+

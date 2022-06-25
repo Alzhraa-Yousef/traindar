@@ -30,5 +30,26 @@ export class AddetionalInformation {
 
 }
 
+export class Points {
+    constructor(
+        public pointnumber:string,
+        public cardnumber:string,
+        public expirydate:string,
+        public securitycode :string,
+        ) {}
+
+}
+
+
+export class Pointshistory {
+    constructor(
+        public points:string,
+        public from:string,
+        public to:string,
+        public date :string,
+        public details :string,
+        ) {}
+
+}
 
 
