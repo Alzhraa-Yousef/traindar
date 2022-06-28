@@ -1,0 +1,41 @@
+.container{margin-top: 150px;}
+div.leftdiv{background-color: #DFD1A2; }
+div.perinfo{height: 100px;}
+
+
+div.perinfo{background-color: #DFD1A2;}
+div.info{ box-shadow:2px 2px #e2ded1;}
+.photo{background-color: #DFD1A2;}
+
+.pimg{width: 130px;  display: block;margin-left: auto;margin-right: auto;width: 50%;}
+.name1{font-size:30px;}
+.email1{font-size: 20px;}
+ 
+.edit_Profile, .point_History ,.invetation ,.credibility{width:100%;padding-left: 10px;font-size:15px; background-color: #E5DECA;cursor: pointer;border:1px solid #bdb7a6;}
+.edit_Profile:hover {
+    background-color: #d6d0bd;
+  }
+.point_History:hover {
+    background-color: #d6d0bd;
+  } 
+  .invetation:hover{
+    background-color: #d6d0bd;
+   }
+.credibility:hover {
+    background-color: #d6d0bd;
+  }
+
+  .form-control{background-color:#F6F1E2 ;width:560px;height:40px;display: inline-block;border-color:#DFD1A2;}
+  small{margin-left:140px;}
+  .btn1{background-color: #DFD1A2;width: 100px;border-radius:25px;margin-left:600px;}
+
+
+  @media ( min-width: 768px)and ( max-width:1300px) {
+    .brr{margin-bottom: 2300px;}
+  }
+
+  @media ( min-width: 400px)and ( max-width:768px) {
+    .form-control{width:240px;}
+    .btn1{margin-left:270px;}
+  }
+

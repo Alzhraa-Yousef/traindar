@@ -1,21 +1,21 @@
 <app-headerafter></app-headerafter>
 <br><br><br>
 <section  *ngIf="manageFlag" id="singup" class=" d-flex justify-content-center " >
-    <div class=" final">
+    <div class=" final pt-2">
       <h2><a routerLink="/home">TrainDar</a></h2>
       <h4>Manage points</h4><br>
       <button class="btn btn1"(click)="sendPoints1()">Send Points</button>
       <br><br>
       <button class="btn btn1"(click)="buyPoints1()">Buy Points</button>
       <br><br>
-      <button class="btn btn1">Points History</button>
+      <button class="btn btn1" (click)="redirect()" >Points History</button>
   
   </div>
 </section>
 
 
   <section *ngIf="sendFlag"  id="send" class=" d-flex justify-content-center " >
-  <div class=" final">
+  <div class=" final pt-2">
     <h2><a routerLink="/home">TrainDar</a></h2>
     <h4>Send points</h4><br>
 
@@ -35,15 +35,16 @@
         Points number must be number
     </small>
 <br>
-<p *ngIf="messageFlag" class="text-center fs-6 fw-bold text-danger">Please complete information </p>
-<button class="btn btn1" (click)="sendPoints2()">Send Points</button>
+<p *ngIf="messageFlag1" class="text-center fs-6 fw-bold text-danger">Please complete information </p>
+<button class="btn btn1" (click)="sendPoints2()">Send</button>
+<button class="btn btn2" (click)="cancel()">Cancel</button>
 </div>
   </section>
 
 
 
   <section *ngIf="buyFlag"  id="buy" class=" d-flex justify-content-center " >
-    <div class=" final">
+    <div class=" final pt-2 ">
       <h2><a routerLink="/home">TrainDar</a></h2>
       <h4>Buy points</h4><br>
   
@@ -80,7 +81,7 @@
       </small>
   <br>
   <p style="text-align: center;font-size: 12px;margin-left:80px;margin-right:80px;">By placing this order you agree to the Credit Card payment terms & conditions</p>
-  <p *ngIf="messageFlag" class="text-center fs-6 fw-bold text-danger">Please complete register information </p>
+  <p *ngIf="messageFlag2" class="text-center fs-6 fw-bold text-danger">Please complete information </p>
 
       <button class="btn btn1" (click)="buyPoints2()">Pay</button>
       <button class="btn btn2" (click)="cancel()">Cancel</button>

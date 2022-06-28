@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CitytrainIDComponent } from './citytrain-id/citytrain-id.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactafterComponent } from './contactafter/contactafter.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 import { Formforget1Component } from './formforget1/formforget1.component';
 import { Formforget3Component } from './formforget3/formforget3.component';
 import { FormsComponent } from './forms/forms.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'contactafter', component: ContactafterComponent },
   { path: 'profile', component: ProfileComponent },
+  {path:'editprofile',component:EditprofileComponent},
   {path:'signinform',component:FormsComponent},
   {path:'loginform',component:LoginformComponent},
   {path:'formforget1',component:Formforget1Component},

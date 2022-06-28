@@ -111,7 +111,7 @@ export class PointshistoryComponent implements OnInit {
                     TRtitle.appendChild(tdtitle3)
                     TRtitle.appendChild(tdtitle4)
                     TRtitle.appendChild(tdtitle5)
-                    table.style.fontSize="25px";
+                    table.style.fontSize="20px";
                     table.appendChild(TRtitle)
                     element.appendChild(table)
                         

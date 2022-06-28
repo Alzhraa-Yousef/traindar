@@ -26,6 +26,7 @@ import { CitytrainIDComponent } from './citytrain-id/citytrain-id.component';
 import { TrainCityNameComponent } from './train-city-name/train-city-name.component';
 import { ManagePointsComponent } from './manage-points/manage-points.component';
 import { PointshistoryComponent } from './pointshistory/pointshistory.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 
 //import { AgmCoreModule } from '@agm/core/lib/core.module';
 
@@ -54,6 +55,7 @@ import { PointshistoryComponent } from './pointshistory/pointshistory.component'
     TrainCityNameComponent,
     ManagePointsComponent,
     PointshistoryComponent,
+    EditprofileComponent,
   ],
   imports: [
     BrowserModule,

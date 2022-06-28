@@ -11,11 +11,13 @@ small{margin-left:75px;}
 
 
 
-#send .final{height:300px;}
+#send .final {height:345px;}
 #send h2 {margin-left:140px;}
 #send h4{margin-left:135px;}
-#send .btn1 {background-color: #F6BC00;border-radius:25px;margin-left:135px;width:150px;}
-.form-control{width:270px;margin-left:70px;border-radius:15px;}
+#send .btn1,.btn2{width: 100px;}
+#send .btn1{margin-left:80px;}
+#send .btn2{margin-left:35px;}
+.form-control{width:270px;margin-left:65px;border-radius:15px;}
 .name{
     background-image: url("../../assets/Icon\ awesome-user-circle.png");
     background-size: 20px 20px;
@@ -32,6 +34,15 @@ small{margin-left:75px;}
 
   #buy{background-image: url('../../assets/formbakground.png');height:750px;background-position: center;}
   #buy .final{background-color: #DFD1A2;opacity:0.9;width:400px;margin-top: 150px;margin-bottom: 80px;}
-  #buy .final{height:470px;}
+  #buy .final{height:490px;}
   #buy h4{margin-left:145px;}
   #buy .btn1,.btn2{width: 100px;}
+  #buy .btn1{margin-left:80px;}
+#buy .btn2{margin-left:35px;}
+
+  // my phone
+@media ( min-width: 400px)and  ( max-width: 768px) 
+{
+ h2{margin-left: 155px;}
+ h4{margin-left: 130px;}
+}

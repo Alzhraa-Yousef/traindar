@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
 import { Points } from '../shared/userform';
@@ -11,31 +12,39 @@ export class ManagePointsComponent implements OnInit {
   manageFlag:boolean|undefined=true
   sendFlag:boolean|undefined
   buyFlag:boolean|undefined
-  messageFlag:boolean|undefined
+  messageFlag1:boolean|undefined
+  messageFlag2:boolean|undefined
   name:string=''
   pointModel: Points = new Points('', '','', '');
   pointnumber:any|undefined=''
   hasTopicError: boolean | undefined;
 
 
-  constructor() { }
+  constructor(private router: Router ) { }
 
   ngOnInit(): void {
 
   }
 
+  redirect(){
+    this.router.navigate(['pointshistory']);
+  }
+
   sendPoints1(){
     this.manageFlag=false
+    this.messageFlag1=false
+    this.messageFlag2=false
     this.buyFlag=false
     this.sendFlag=true
   }
 
   sendPoints2(){
     if(this.name==''||this.pointnumber==''|| this.hasTopicError==false) {
-      this.messageFlag=true;
+      this.messageFlag1=true;
+      
     }
     else{
-      this.messageFlag=false;
+      this.messageFlag1=false;
     
     Swal.fire({
       title: 'Confirm',
@@ -67,6 +76,8 @@ export class ManagePointsComponent implements OnInit {
   
   buyPoints1(){
     this.manageFlag=false
+    this.messageFlag1=false
+    this.messageFlag2=false
     this.sendFlag=false
     this.buyFlag=true
     
@@ -75,10 +86,10 @@ export class ManagePointsComponent implements OnInit {
 
   buyPoints2(){
     if(this.pointModel.pointnumber==''||this.pointModel.cardnumber==''||this.pointModel.expirydate==''||this.pointModel.securitycode==''|| this.hasTopicError==false) {
-      this.messageFlag=true;
+      this.messageFlag2=true;
     }
     else{
-      this.messageFlag=false;
+      this.messageFlag2=false;
     Swal.fire({
       title: 'Confirm',
       html: "Are you sure ?",
