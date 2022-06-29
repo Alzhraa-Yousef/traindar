@@ -9,8 +9,13 @@ body{background-color: #F6F1E2;}
 }
 
 // my phone
-@media ( min-width: 400px)and  ( max-width: 768px) 
+@media ( min-width: 400px)and  ( max-width: 500px) 
  { body{width: 115%;}
+}
+
+// small web
+@media ( min-width: 500px)and  ( max-width: 768px) 
+ { body{width: 100%;}
 }
 
 

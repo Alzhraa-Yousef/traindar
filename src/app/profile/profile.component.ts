@@ -33,5 +33,14 @@ export class ProfileComponent implements OnInit {
     }
 }
 
+goEditProfile(){
+  this.router.navigate(['editprofile']) ;
+}
+
+goPointHistory(){
+  this.router.navigate(['pointshistory'])  ;
+}
+
+
 
 }

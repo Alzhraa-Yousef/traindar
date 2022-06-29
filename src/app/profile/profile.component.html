@@ -11,12 +11,12 @@
                         <p class=" email " style="text-align: center;">{{profileInfo.email}} </p>
                     </div>
 
-                    <div class="col-md-12 edit_Profile " >
+                    <div class="col-md-12 edit_Profile " (click)="goEditProfile()">
                         <p><img width="20px" height="20px"
                                 src="../../assets/Icon awesome-user-circle.png">&nbsp;&nbsp;Edit Profile</p>
                     </div>
 
-                    <div class=" point_History">
+                    <div class=" point_History" (click)="goPointHistory()">
                         <p><img width="20px" height="20px" src="../../assets/Icon awesome-coins.png">&nbsp;&nbsp;Point
                             History</p>
                     </div>

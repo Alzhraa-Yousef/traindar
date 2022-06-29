@@ -47,6 +47,17 @@ export class EditprofileComponent implements OnInit {
 }
 
 
+goEditProfile(){
+  this.router.navigate(['editprofile']) ;
+}
+
+goPointHistory(){
+  this.router.navigate(['pointshistory'])  ;
+}
+
+
+
+
 Save(event: MouseEvent) {
   if (this.userModel.name == '' || this.userModel.email  == '' || this.userModel.phone  == ''  || this.hasTopicError == false) {
     event.preventDefault();
@@ -68,13 +79,13 @@ Save(event: MouseEvent) {
     //   },
     // );
     Swal.fire({
-      title: 'enter your password',
+      title: 'Enter your password',
       input: 'text',
       inputAttributes: {
         autocapitalize: 'off'
       },
       showCancelButton: true,
-      confirmButtonText: 'Look up',
+      confirmButtonText: 'OK',
       showLoaderOnConfirm: true,
       preConfirm: (login) => {
         return fetch(`//api.github.com/users/${login}`)
@@ -94,8 +105,7 @@ Save(event: MouseEvent) {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          title: `${result.value.login}'s avatar`,
-          imageUrl: result.value.avatar_url
+          title: `${result.value.login}`,
         })
       }
     })
