@@ -133,27 +133,27 @@ export class PointshistoryComponent implements OnInit {
 
                             tdpoints.style.border='1px solid black'
                             tdpoints.style.background='#DFD1A2'
-                            tdpoints.style.width='200px'
+                            tdpoints.style.width='180px'
                             tdpoints.style.textAlign='center'
 
                             tdfrom.style.border='1px solid black'
                             tdfrom.style.background='#DFD1A2'
-                            tdfrom.style.width='200px'
+                            tdfrom.style.width='180px'
                             tdfrom.style.textAlign='center'
 
                             tdto.style.border='1px solid black'
                             tdto.style.background='#DFD1A2'
-                            tdto.style.width='200px'
+                            tdto.style.width='180px'
                             tdto.style.textAlign='center'
 
                             tddate.style.border='1px solid black'
                             tddate.style.background='#DFD1A2'
-                            tddate.style.width='200px'
+                            tddate.style.width='180px'
                             tddate.style.textAlign='center'
 
                             tddetails.style.border='1px solid black'
                             tddetails.style.background='#DFD1A2'
-                            tddetails.style.width='500px'
+                            tddetails.style.width='480px'
                             tddetails.style.textAlign='center'
 
 
