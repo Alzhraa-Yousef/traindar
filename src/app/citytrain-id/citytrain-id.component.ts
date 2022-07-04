@@ -8,7 +8,7 @@ import { Station } from '../shared/station';
 import { Router } from '@angular/router';
 
 declare var google: any;
-declare var $:JQueryStatic;
+//declare var $:JQueryStatic;
 @Component({
   selector: 'app-citytrain-id',
   templateUrl: './citytrain-id.component.html',
@@ -369,40 +369,27 @@ export class CitytrainIDComponent implements OnInit {
 
 
   MapGoogleCode(): void {
-    const myLatlng = { 
-      // lat: 27.180134
-      // , lng: 31.189283
-      lat: this.trainLocation.locationLat, lng: this.trainLocation.locationLng
-    };
-    //const myLatlng = {lng: this.trainLocation.lng ,lat: this.trainLocation.lat};
-
-    let x=13;
+    const myLatlng = { lat: this.trainLocation.locationLat, lng: this.trainLocation.locationLng };
     const map = new google.maps.Map(
-      document.getElementById("map") as HTMLElement,
-      {
-        zoom: 13,
-        center: myLatlng,
-      }
-    );
-  
+        document.getElementById("map") as HTMLElement,
+        {
+          zoom: 13,
+          center: myLatlng,
+        });
     const marker = new google.maps.Marker({
-      position: myLatlng,
-      map,
-      title: "Click to zoom",
+        position: myLatlng,
+        map,
+        title: "Click to zoom",
     });
-  
     map.addListener("center_changed", () => {
-      // 3 seconds after the center of the map has changed, pan back to the
-      // marker.
-      window.setTimeout(() => {
-        map.panTo(marker.getPosition()as google.maps.LatLng );
-      }, 3000);
+        // 3 seconds after the center of the map has changed, pan back to the marker.
+        window.setTimeout(() => { map.panTo(marker.getPosition()as google.maps.LatLng );}, 3000);
     });
-  
     marker.addListener("click", () => {
-      map.zoom++;
-      map.setCenter(marker.getPosition()as google.maps.LatLng );//as google.maps.LatLng
+        map.zoom++;
+        map.setCenter(marker.getPosition()as google.maps.LatLng );
     });
+
   }
 
 

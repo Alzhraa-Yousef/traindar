@@ -29,3 +29,33 @@
     .smalllap{margin-left: 1850px;}
     .navbar-nav li{font-size:35px;margin-inline:30px;}
     }
+
+
+@media ( min-width: 1496px)and  ( max-width:1535px) 
+{ 
+    .smalllap{margin-left: 110px;}
+    .navbar-nav li{font-size:16px;}
+}
+
+
+@media ( min-width: 1400px)and  ( max-width:1495px) 
+{   .pre{display:none}
+    .pp2{margin-left:515px;}
+    .navbar-nav li{font-size:16px;}
+}
+
+@media ( min-width: 1351px)and  ( max-width:1399px) 
+{   .pre{display:none}
+    .pp2{margin-left:460px;}
+    .navbar-nav li{font-size:16px;}
+}
+
+@media ( min-width: 1301px)and  ( max-width:1350px) 
+{   .pre{display:none}
+    .pp2{margin-left:418px;}
+    .navbar-nav li{font-size:16px;}
+}
+
+
+
+

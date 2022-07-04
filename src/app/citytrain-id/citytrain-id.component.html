@@ -3,44 +3,44 @@
 
 
 <div class="row row1  ">
-<div class=" col-md-12 d-flex justify-content-center">
-<select class="form-select" name="CityNameMenu"  id="CityNameMenu" aria-label="Default select example">
-  <option selected disabled> Your City:</option>
-  <option *ngFor="let StationName of StationList" value="CityName">{{StationName}}</option>
-</select>
-</div>
+  <div class=" col-md-12 d-flex justify-content-center">
+    <select class="form-select" name="CityNameMenu" id="CityNameMenu" aria-label="Default select example">
+      <option selected disabled> Your City:</option>
+      <option *ngFor="let StationName of StationList" value="CityName">{{StationName}}</option>
+    </select>
+  </div>
 </div>
 
 <br>
 
 <div class="row row1  ">
-    <div class=" col-md-12 d-flex justify-content-center">
-    <select class="form-select" name="CityNameMenu2"  id="CityName2Menu" aria-label="Default select example">
+  <div class=" col-md-12 d-flex justify-content-center">
+    <select class="form-select" name="CityNameMenu2" id="CityName2Menu" aria-label="Default select example">
       <option selected disabled> Your Destination:</option>
       <option *ngFor="let StationName of StationList" value="CityName">{{StationName}}</option>
     </select>
-    </div>
-    </div>
+  </div>
+</div>
 
-    <br>
+<br>
 
-    <div class="row row2 ">
-        <div class="col-md-12 d-flex justify-content-center">
-          <button class="btn btn2" (click)="GetTraininformation()" >Get TrainID</button>
-        </div>
-        </div>
+<div class="row row2 ">
+  <div class="col-md-12 d-flex justify-content-center">
+    <button class="btn btn2" (click)="GetTraininformation()">Get TrainID</button>
+  </div>
+</div>
 
-        <div class="row row2 mt-2">
-          <div class="col-md-12 d-flex justify-content-center">
-          <p *ngIf="selectFlag" style="color: red;font-size:18px;">Please select name of city</p>
-          </div>
-          </div>
+<div class="row row2 mt-2">
+  <div class="col-md-12 d-flex justify-content-center">
+    <p *ngIf="selectFlag" style="color: red;font-size:18px;">Please select name of city</p>
+  </div>
+</div>
 
 
 <br><br>
-    <div  class="row row3 ">
-      <div class="col-md-12 d-flex justify-content-center"id="row3">
-        <!-- <table>
+<div class="row row3 ">
+  <div class="col-md-12 d-flex justify-content-center" id="row3">
+    <!-- <table>
           <tr >
             <td class="title1">Train ID</td>
             <td class="title2">Remaining Time(hr)</td>
@@ -53,35 +53,35 @@
       </div>
 
       <br> -->
-        <!-- <div *ngIf="flagb" class="col-md-12 d-flex justify-content-center">
+    <!-- <div *ngIf="flagb" class="col-md-12 d-flex justify-content-center">
           <button class="btn btn2" disabled id="b2" >Selected Train Location</button>
         </div> -->
-      </div>
-      </div>
+  </div>
+</div>
 
-      <div class="row row2 ">
-        <div  class="col-md-12 d-flex justify-content-center" id="row4">
-          <!-- <button class="btn btn2 b2" disabled id="b2" >Selected Train Location</button> -->
-        </div>
-        </div>
-
-
+<div class="row row2 ">
+  <div class="col-md-12 d-flex justify-content-center" id="row4">
+    <!-- <button class="btn btn2 b2" disabled id="b2" >Selected Train Location</button> -->
+  </div>
+</div>
 
 
 
-        <div class="row row5 ">
-          <div  class="col-md-12 d-flex justify-content-center" >
-            <div id="map" ></div>
-          </div>
-          </div>
 
-        
+
+<div class="row row5 ">
+  <div class="col-md-12 d-flex justify-content-center">
+    <div id="map"></div>
+  </div>
+</div>
+
+
 
 
 
 
 
 <div id="brr">
-    <br><br><br><br><br><br><br><br><br>
-    </div>    
+  <br><br><br><br><br><br><br><br><br>
+</div>
 <app-footerafter></app-footerafter>
