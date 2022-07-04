@@ -44,71 +44,6 @@ footer{background-color:#DFD1A2 ;}
 .ss1 a .s:hover{background-color:#bbac7c ;}
 .ss2 a .s:hover{background-color:#bbac7c ;}
 
-// for small labtop
-@media ( min-width: 768px)and  ( max-width:1300px){
-  .row1 .ss{width:500px;height: 500px;}
-  .row2 .ss1{width:500px;height: 500px;}
-  .row2 .ss2{width:500px;height: 500px;}
-.rooow{margin-right:2300px;margin-top: 500px;}
-  .row1{
-    margin-left: auto;
-    margin-right:auto;
-    width: 175%;
-  }
-  .row2{
-    margin-left:1980px;
-    margin-right: auto;
-    width: 175%;
-    margin-bottom: 300px;
-  }
-  .aboutp{font-size:40px;}
-}
-
-@media ( min-width: 768px)and ( max-width:1050px) {
-  .row1 .ss{width:500px;height: 500px;}
-  .row2 .ss1{width:500px;height: 500px;}
-  .row2 .ss2{width:500px;height: 500px;}
-.rooow{margin-right:2000px;margin-top: 500px;}
-  .row1{
-    margin-left: auto;
-    margin-right:auto;
-    width: 200%;
-  }
-  .row2{
-    margin-left:1450px;
-    margin-right: auto;
-    width: 175%;
-    margin-bottom: 350px;
-  }
-  .aboutp{font-size:40px;}
-}
-
-
-// my phone
-@media ( min-width: 400px)and  ( max-width: 768px) {
-  .row1{
-    //margin-left:70px; 
-    // margin: auto;
-    // width: 60%;
-    // padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-  }
-  .row2{
-    //margin-left:75px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  .aboutp{margin-right:15%;font-size:20px;}
-  .bottom-left {
-    position: absolute;
-    bottom:30px;
-    left:40px;
-    font-size:25px;
-  }
-}
 
 
 // small phone
@@ -127,45 +62,105 @@ footer{background-color:#DFD1A2 ;}
 }
 
 
-
-
-@media ( min-width: 1495px)and  ( max-width:1535px) 
-{ 
-//.rooow{margin-right:2300px;margin-top: 500px;}
-  .row2{
-    margin-left:500px;
-    margin-right: auto;
-    margin-bottom: 300px;
-  }
-  .aboutp{font-size:25px;}
-}
-
-
-@media ( min-width: 1400px)and  ( max-width:1495px) 
-{   
-  .row2{
-    margin-left:375px;
-    margin-right: auto;
-    margin-bottom: 300px;
-  }
-  //.aboutp{font-size:25px;}
-
-}
-
-@media ( min-width: 1350px)and  ( max-width:1400px) 
-{ 
-  .rooow{margin-left:170px;}
- 
+// my phone
+@media ( min-width: 400px)and  ( max-width:575px) {// 768px
   .row1{
-  margin-left: auto;
-  margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  .row2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .aboutp{margin-right:15%;font-size:20px;}
+  .bottom-left {
+    position: absolute;
+    bottom:30px;
+    left:40px;
+    font-size:25px;
+  }
 }
-.row2{
-  margin-left:350px;
-  margin-right: auto;
-  margin-bottom: 350px;
-}
-}
+
+
+@media ( min-width: 575px)and ( max-width:768px) {
+  .rooow{margin-left:600px;}
+  .row1{
+   margin-left: auto;
+   margin-right: auto;
+   width: 400%;
+ }
+ .row2{
+   margin-left: 800px;
+   margin-right: auto;
+   width: 400%;
+ }
+   .aboutp{font-size:35px;}
+   .bottom-left {
+     position: absolute;
+     bottom:30px;
+     left:100px;
+     font-size:50px;
+   }
+  }
+
+
+  @media ( min-width: 768px)and  ( max-width:825px){
+    .rooow{margin-left:1000px;margin-top: 600px;}
+      .row1{
+        margin-left: auto;
+        margin-right:auto;
+        width: 400%;
+      }
+      .row2{
+        margin-left:1200px;
+        margin-right: auto;
+        margin-bottom: 300px;
+        width: 400%;
+      }
+      .aboutp{font-size:40px;margin-right:2%;}
+      .brr{margin-bottom:1700px;}
+    }
+
+
+    @media ( min-width: 1024px)and  ( max-width:1279px){//1300px
+    .rooow{margin-left:1450px;}
+      .row1{
+        margin-left: auto;
+        margin-right:auto;
+        width: 175%;
+      }
+      .row2{
+        margin-left:1650px;
+        margin-right: auto;
+        width: 175%;
+        margin-bottom: 400px;
+      }
+      .aboutp{font-size:40px;margin-right:3%;}
+    }
+
+
+    @media ( min-width: 1279px)and  ( max-width:1300px){//1300px
+      .rooow{margin-left:1950px;margin-top:300px;}
+        .row1{
+          margin-left: auto;
+          margin-right:auto;
+          width: 175%;
+        }
+        .row2{
+          margin-left:2150px;
+          margin-right: auto;
+          width: 175%;
+          margin-bottom: 600px;
+        }
+        .aboutp{font-size:45px;margin-right: 10%;}
+        .brr{margin-bottom:300px;}
+
+      }
+
+
+
 
 @media ( min-width: 1301px)and  ( max-width:1350px) 
 {  
@@ -182,6 +177,41 @@ footer{background-color:#DFD1A2 ;}
 }
 }
 
+@media ( min-width: 1350px)and  ( max-width:1400px) 
+{ 
+  .rooow{margin-left:170px;}
+ 
+  .row1{
+  margin-left: auto;
+  margin-right:auto;
+}
+.row2{
+  margin-left:350px;
+  margin-right: auto;
+  margin-bottom: 350px;
+}
+.aboutp{font-size:25px;margin-right: 5%;}
+
+}
 
 
+@media ( min-width: 1400px)and  ( max-width:1495px) 
+{   
+  .row2{
+    margin-left:375px;
+    margin-right: auto;
+    margin-bottom: 300px;
+  }
+  .aboutp{font-size:25px;margin-right: 5%;}
+}
 
+@media ( min-width: 1495px)and  ( max-width:1535px) 
+{ 
+//.rooow{margin-right:2300px;margin-top: 500px;}
+  .row2{
+    margin-left:500px;
+    margin-right: auto;
+    margin-bottom: 300px;
+  }
+  .aboutp{font-size:25px;}
+}

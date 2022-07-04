@@ -3,11 +3,6 @@
 // Custom.scss
 
 body{background-color: #F6F1E2;}
-//labtop
-
-@media ( min-width: 768px)and  ( max-width:1300px) 
- { body{width:400%;}
-}
 
 
 @media ( min-width: 1495px)and  ( max-width:1535px) 
@@ -15,20 +10,25 @@ body{background-color: #F6F1E2;}
     body{width:113%;}
 }
 
-@media ( min-width: 1301px)and  ( max-width:1495px) 
+@media ( min-width: 1300px)and  ( max-width:1495px) 
 { 
-    body{width:105%;}
+    body{width:113%;}
 }
 
-// small web
-@media ( min-width: 500px)and  ( max-width: 768px) 
- { body{width: 100%;}
+
+@media ( min-width: 768px)and  ( max-width:1300px) 
+ { body{width:400%;}
+}
+
+
+@media ( min-width: 575px)and  ( max-width: 768px) 
+ { body{width: 400%;}
 }
 
 
 
 // my phone
-@media ( min-width: 400px)and  ( max-width: 500px) 
+@media ( min-width: 400px)and  ( max-width: 575px) 
  { body{width: 115%;}
 }
 
