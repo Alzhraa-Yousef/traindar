@@ -168,14 +168,14 @@ footer{background-color:#DFD1A2 ;}
 
 @media ( min-width: 1301px)and  ( max-width:1350px) 
 {  
-  .rooow{margin-left:130px;}
+  .rooow{margin-left:200px;}
 
   .row1{
   margin-left: auto;
   margin-right:auto;
 }
 .row2{
-  margin-left:320px;
+  margin-left:380px;
   margin-right: auto;
   margin-bottom: 350px;
 }
@@ -185,14 +185,14 @@ footer{background-color:#DFD1A2 ;}
 
 @media ( min-width: 1350px)and  ( max-width:1400px) 
 { 
-  .rooow{margin-left:170px;}
+  .rooow{margin-left:210px;}
  
   .row1{
   margin-left: auto;
   margin-right:auto;
 }
 .row2{
-  margin-left:350px;
+  margin-left:400px;
   margin-right: auto;
   margin-bottom: 350px;
 }
@@ -203,8 +203,14 @@ footer{background-color:#DFD1A2 ;}
 
 @media ( min-width: 1400px)and  ( max-width:1495px) 
 {   
+  .rooow{margin-left:240px;}
+
+  .row1{
+  margin-left: auto;
+  margin-right:auto;
+}
   .row2{
-    margin-left:375px;
+    margin-left:425px;
     margin-right: auto;
     margin-bottom: 300px;
   }
@@ -213,11 +219,17 @@ footer{background-color:#DFD1A2 ;}
 
 @media ( min-width: 1495px)and  ( max-width:1535px) 
 { 
-//.rooow{margin-right:2300px;margin-top: 500px;}
+  .rooow{margin-left:300px;}
+
+  .row1{
+  margin-left: auto;
+  margin-right:auto;
+}
   .row2{
-    margin-left:500px;
+    margin-left:490px;
     margin-right: auto;
     margin-bottom: 300px;
   }
   .aboutp{font-size:25px;margin-right: 12%;}
 }
+
