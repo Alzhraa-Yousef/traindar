@@ -46,9 +46,11 @@ footer{background-color:#DFD1A2 ;}
 
 
 
+
+
 // small phone
 @media ( max-width:400px) {
-  .row1{
+  .row1{ 
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -60,6 +62,8 @@ footer{background-color:#DFD1A2 ;}
   }
   .aboutp{margin-right:15%;}
 }
+
+
 
 
 // my phone
@@ -175,6 +179,8 @@ footer{background-color:#DFD1A2 ;}
   margin-right: auto;
   margin-bottom: 350px;
 }
+.aboutp{font-size:25px;margin-right: 13%;}
+
 }
 
 @media ( min-width: 1350px)and  ( max-width:1400px) 
@@ -190,7 +196,7 @@ footer{background-color:#DFD1A2 ;}
   margin-right: auto;
   margin-bottom: 350px;
 }
-.aboutp{font-size:25px;margin-right: 5%;}
+.aboutp{font-size:25px;margin-right: 12%;}
 
 }
 
@@ -202,7 +208,7 @@ footer{background-color:#DFD1A2 ;}
     margin-right: auto;
     margin-bottom: 300px;
   }
-  .aboutp{font-size:25px;margin-right: 5%;}
+  .aboutp{font-size:25px;margin-right:12%;}
 }
 
 @media ( min-width: 1495px)and  ( max-width:1535px) 
@@ -213,5 +219,5 @@ footer{background-color:#DFD1A2 ;}
     margin-right: auto;
     margin-bottom: 300px;
   }
-  .aboutp{font-size:25px;}
+  .aboutp{font-size:25px;margin-right: 12%;}
 }
